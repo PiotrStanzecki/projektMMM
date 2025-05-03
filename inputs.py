@@ -2,7 +2,7 @@ import numpy as np
 def inp(Tend, T, N, shape, Amp, angle):
     stepsT = N * (T/Tend) #converting time period to number of steps in simulation
     deltaY = (Amp/stepsT) #triangle function rising step
-    U = []
+    U = [] #initializing input array
     match shape:
             case "rectangle":
                 for i in range(0, N):
