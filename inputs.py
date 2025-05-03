@@ -1,7 +1,7 @@
 import numpy as np
 def inp(Tend, T, N, shape, Amp, angle):
     stepsT = N * (T/Tend) #converting time period to number of steps in simulation
-    deltaY = (Amp/stepsT)
+    deltaY = (Amp/stepsT) #triangle function rising step
     U = []
     match shape:
             case "rectangle":
@@ -18,7 +18,7 @@ def inp(Tend, T, N, shape, Amp, angle):
                         U.append(U[i - 1] + deltaY)
             case "harmonic":
                 for i in range(0, N):
-                    U.append(np.sin(i * 2 * np.pi / stepsT))
+                    U.append(Amp*np.sin(i * 2 * np.pi / stepsT))
                    
 
     return U
