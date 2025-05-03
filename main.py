@@ -1,4 +1,4 @@
 
 import numpy as np
+import control as ctrl
 
-print((np.sin(30))**2 + (np.cos(30))**2)
