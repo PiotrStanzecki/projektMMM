@@ -1,5 +1,5 @@
 import numpy as np
-def inp(Tend, T, N, shape, Amp, angle):
+def inp(Tend, T, N, shape, Amp):
     stepsT = N * (T/Tend) #converting time period to number of steps in simulation
     deltaY = (Amp/stepsT) #triangle function rising step
     U = [] #initializing input array
