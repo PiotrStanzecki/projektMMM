@@ -5,7 +5,7 @@ from main import *
 
 root = tk.Tk()
 root.geometry("600x400")
-root.title("Login Screen")
+root.title("Simulation")
 
 
 b = tk.StringVar(value="1")
